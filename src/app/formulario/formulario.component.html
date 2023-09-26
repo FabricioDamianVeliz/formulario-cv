@@ -1,0 +1,34 @@
+<div class="form-container">
+  <h2>Datos personales</h2>
+  <label for="foto">Foto:</label>
+  <input type="file" accept="image/*" (change)="onFileSelected($event)" id="foto">
+  
+  <label for="nombre">Nombre:</label>
+  <input type="text" [(ngModel)]="nombre" id="nombre">
+
+  <label for="apellidos">Apellidos:</label>
+  <input type="text" [(ngModel)]="apellidos" id="apellidos">
+
+  <label for="correo">Correo Electrónico:</label>
+  <input type="email" [(ngModel)]="correo" id="correo">
+
+  <label for="telefono">Teléfono:</label>
+  <input type="tel" [(ngModel)]="telefono" id="telefono">
+
+  <label for="direccion">Dirección:</label>
+  <input type="text" [(ngModel)]="direccion" id="direccion">
+
+  <label for="codigoPostal">Código Postal:</label>
+  <input type="text" [(ngModel)]="codigoPostal" id="codigoPostal">
+
+  <label for="localidad">Localidad:</label>
+  <input type="text" [(ngModel)]="localidad" id="localidad">
+
+  <button (click)="generarCV()">Generar PDF</button>
+</div>
+
+
+
+
+
+  
